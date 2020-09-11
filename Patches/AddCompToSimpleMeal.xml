@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="MealSimple"]</xpath>
+		<value>
+			<comps>
+				<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+					<skillDefName>Shooting</skillDefName>
+					<xpAmount>200000</xpAmount>
+				</li>
+				<li Class="CompProperties_Usable">
+					<compClass>CompUsable</compClass>
+					<useJob>UseItem</useJob>
+					<useLabel>Use neurotrainer to learn skill</useLabel>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+</Patch>
