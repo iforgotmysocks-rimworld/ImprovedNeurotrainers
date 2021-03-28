@@ -2,18 +2,24 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="MealSimple"]</xpath>
+		<xpath>/Defs/ThingDef[defName="Apparel_BasicShirt"]</xpath>
 		<value>
 			<comps>
 				<li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
 					<skillDefName>Shooting</skillDefName>
-					<xpAmount>200000</xpAmount>
+					<xpAmount>75000</xpAmount>
 				</li>
 				<li Class="CompProperties_Usable">
 					<compClass>CompUsable</compClass>
 					<useJob>UseItem</useJob>
 					<useLabel>Use neurotrainer to learn skill</useLabel>
 				</li>
+        <li Class="CompProperties_UseEffectPlaySound">
+          <soundOnUsed>MechSerumUsed</soundOnUsed>
+        </li>
+        <li Class="CompProperties_UseEffect">
+          <compClass>CompUseEffect_DestroySelf</compClass>
+        </li>
 			</comps>
 		</value>
 	</Operation>
